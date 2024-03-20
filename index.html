@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Remix Icon -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>Developer Nayan | Portfolio</title>
+  </head>
+  <body class="bg-gray-800 overflow-x-hidden">
+    <header class="fixed top-0 left-0 w-full bg-gray-800 z-30 shadow-xl">
+      <!-- Navbar -->
+      <div class="container px-3 py-2 mx-auto">
+        <nav class="navbar flex items-center justify-between">
+          <a href="#">
+            <img
+              class="logo"
+              src="/assets/developer-nayan.png"
+              alt="Developer Nayan"
+            />
+          </a>
+
+          <button
+            class="menu-btn text-3xl text-white md:hidden relative z-50"
+            id="menuBtn"
+          >
+            <i class="ri-menu-3-line" id="menuBtnIcon"></i>
+          </button>
+
+          <ul
+            class="nav items-center absolute left-1/2 top-0 bg-black w-1/2 z-40 text-center h-screen pt-16 left-full transition-all ease-in-out duration-300"
+            id="menu"
+          >
+            <li>
+              <a
+                href="#"
+                class="text-xl text-white block my-12 hover:text-primary transition ease-in-out duration-300"
+                >Home</a
+              >
+            </li>
+            <li>
+              <a
+                href="#about-me"
+                class="text-xl text-white block my-12 hover:text-primary transition ease-in-out duration-300"
+                >About</a
+              >
+            </li>
+            <li>
+              <a
+                href="#my-skills"
+                class="text-xl text-white block my-12 hover:text-primary transition ease-in-out duration-300"
+                >My Skills</a
+              >
+            </li>
+            <li>
+              <a
+                href="#projects"
+                class="text-xl text-white block my-12 hover:text-primary transition ease-in-out duration-300"
+                >Projects</a
+              >
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <!-- Hero Section -->
+      <div class="container px-3 py-2 mx-auto">
+        <div class="hero-text">
+          <h4 class="text-2xl text-center leading-[70px] text-white my-20">
+            Hi, I am
+            <span class="text-5xl block font-bold">Abdullah Nayan,</span> a
+            professional
+            <span class="text-6xl block text-primary font-bold"
+              >Frontend Developer.</span
+            >
+          </h4>
+        </div>
+      </div>
+
+      <!-- About Me Section -->
+      <section class="pt-16" id="about-me">
+        <div class="container px-3 py-2 mx-auto text-center">
+          <h3
+            class="section-title inline relative text-primary text-3xl font-[courier] font-bold after:inline-block after:absolute after:-bottom-3 after:bg-white after:w-full after:h-[5px] after:left-0"
+          >
+            About Me
+          </h3>
+          <div class="mt-14">
+            <div class="">
+              <img
+                src="./assets/hero-img2.png"
+                alt="Hero Image"
+                class="w-2/3 mx-auto"
+              />
+            </div>
+            <p class="text-white text-lg text-left mt-10 leading-relaxed">
+              I am Abdullah Al Mamun Nayan. I am a professional Web Developer
+              with 3 years of experience. My journey as a web developer started
+              with a fascination for technology and a drive to turn ideas into
+              reality. Over the years, I've honed my skills in front-end
+              development, mastering languages like HTML, CSS, JavaScript, and a
+              framework React for front-end development. I will develope your
+              website from your Figma, PSD, or AI design. <br /><br />
+              I believe in the power of clean code and user-centric design. My
+              approach to development is focused on creating responsive,
+              fast-loading, and intuitive websites that not only look great but
+              also provide a seamless user experience across different devices
+              and platforms. <br /><br />
+              Let's build something amazing together!
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Skills Section -->
+      <section class="pt-16" id="my-skills">
+        <div class="container px-3 py-2 mx-auto text-center">
+          <h3
+            class="section-title inline relative text-primary text-3xl font-[courier] font-bold after:inline-block after:absolute after:-bottom-3 after:bg-white after:w-full after:h-[5px] after:left-0"
+          >
+            My Skills
+          </h3>
+          <div class="mt-14 flex flex-wrap justify-between">
+            <img
+              src="./assets/html.png"
+              alt="HTML 5"
+              class="w-1/6 m-5 hover:scale-110 transition ease-in-out duration-300"
+              title="HTML 5"
+            />
+            <img
+              src="./assets/css.png"
+              alt="CSS 3"
+              class="w-1/6 m-5 hover:scale-110 transition ease-in-out duration-300"
+              title="CSS 3"
+            />
+            <img
+              src="./assets/javascript.png"
+              alt="Javascript"
+              class="w-1/6 m-5 hover:scale-110 transition ease-in-out duration-300"
+              title="Javascript"
+            />
+            <img
+              src="./assets/bootstrap.png"
+              alt="Bootstrap 5"
+              class="w-1/6 m-5 hover:scale-110 transition ease-in-out duration-300"
+              title="Bootstrap 5"
+            />
+            <img
+              src="./assets/tailwindcss.png"
+              alt="Tailwind CSS"
+              class="w-1/6 m-5 hover:scale-110 transition ease-in-out duration-300"
+              title="tailwind CSS"
+            />
+            <img
+              src="./assets/react.png"
+              alt="React"
+              class="w-1/6 m-5 hover:scale-110 transition ease-in-out duration-300"
+              title="React"
+            />
+          </div>
+        </div>
+      </section>
+
+      <!-- Projects Section -->
+      <section class="pt-16" id="projects">
+        <div class="container px-3 py-2 mx-auto text-center">
+          <h3
+            class="section-title inline relative text-primary text-3xl font-[courier] font-bold after:inline-block after:absolute after:-bottom-3 after:bg-white after:w-full after:h-[5px] after:left-0"
+          >
+            Projects
+          </h3>
+
+          <p class="text-white mt-14">Some of my previous works are here. I have done these projects in a renowned marketplace with 100% client satisfaction. There are also 4 practice projects.</p>
+
+          <div class="mt-14 flex flex-col gap-6">
+            <div class="item relative p-3 border rounded-lg">
+              <a href="http://www.sogena.it/" class="relative">
+                <div
+                  class="bg-primary absolute right-2 top-2 px-3 py-1 rounded-md"
+                >
+                  Client Project
+                </div>
+                <img src="./assets/projects/Sogena-homepage.png" alt="Sogena" />
+              </a>
+              <h4 class="text-white text-2xl mt-3">Sogena</h4>
+            </div>
+
+            <div class="item relative p-3 border rounded-lg">
+              <a href="https://ivan-masa.netlify.app/" class="relative">
+                <div
+                  class="bg-primary absolute right-2 top-2 px-3 py-1 rounded-md"
+                >
+                  Client Project
+                </div>
+                <img src="./assets/projects/ivan-masa.png" alt="Ivan Masa" />
+              </a>
+              <h4 class="text-white text-2xl mt-3">Ivan Masa</h4>
+            </div>
+
+            <div class="item relative p-3 border rounded-lg">
+              <a href="https://www.zuscreative.cz/" class="relative">
+                <div
+                  class="bg-primary absolute right-2 top-2 px-3 py-1 rounded-md"
+                >
+                  Client Project
+                </div>
+                <img src="./assets/projects/creative.png" alt="Creative" />
+              </a>
+              <h4 class="text-white text-2xl mt-3">Creative</h4>
+            </div>
+
+            <div class="item relative p-3 border rounded-lg">
+              <a href="https://accountingally.ca/" class="relative">
+                <div
+                  class="bg-primary absolute right-2 top-2 px-3 py-1 rounded-md"
+                >
+                  Client Project
+                </div>
+                <img src="./assets/projects/ys-accounting.png" alt="YS Accounting" />
+              </a>
+              <h4 class="text-white text-2xl mt-3">YS Accounting</h4>
+            </div>
+
+            <div class="item relative p-3 border rounded-lg">
+              <a href="https://sherry-v1.netlify.app/" class="relative">
+                <div
+                  class="bg-primary absolute right-2 top-2 px-3 py-1 rounded-md"
+                >
+                  Client Project
+                </div>
+                <img src="./assets/projects/sherry.png" alt="Sherry" />
+              </a>
+              <h4 class="text-white text-2xl mt-3">Sherry</h4>
+            </div>
+
+            <div class="item relative p-3 border rounded-lg">
+              <a href="https://sherry7.netlify.app/" class="relative">
+                <div
+                  class="bg-primary absolute right-2 top-2 px-3 py-1 rounded-md"
+                >
+                  Client Project
+                </div>
+                <img src="./assets/projects/sherry-v2.png" alt="Sherry V2" />
+              </a>
+              <h4 class="text-white text-2xl mt-3">Sherry-v2</h4>
+            </div>
+
+            <div class="item relative p-3 border rounded-lg">
+              <a href="https://leelaworldwide.com/" class="relative">
+                <div
+                  class="bg-primary absolute right-2 top-2 px-3 py-1 rounded-md"
+                >
+                  Client Project
+                </div>
+                <img src="./assets/projects/leela-worldwide.png" alt="Leela Worldwide" />
+              </a>
+              <h4 class="text-white text-2xl mt-3">Leela Worldwide</h4>
+            </div>
+
+            <div class="item relative p-3 border rounded-lg">
+              <a href="https://cas-games.netlify.app/" class="relative">
+                <div
+                  class="bg-primary absolute right-2 top-2 px-3 py-1 rounded-md"
+                >
+                  Client Project
+                </div>
+                <img src="./assets/projects/cas-games.png" alt="Cas Games" />
+              </a>
+              <h4 class="text-white text-2xl mt-3">Cas Games</h4>
+            </div>
+
+            <div class="item relative p-3 border rounded-lg">
+              <a
+                href="https://yuvithecafe.com/"
+                class="relative"
+              >
+                <div
+                  class="bg-primary absolute right-2 top-2 px-3 py-1 rounded-md"
+                >
+                  Client Project
+                </div>
+                <img src="./assets/projects/yuvi-coffee.png" alt="Yuvi Coffee" />
+              </a>
+              <h4 class="text-white text-2xl mt-3">Yuvi Coffee</h4>
+            </div>
+
+            <div class="item relative p-3 border rounded-lg">
+              <a
+                href="https://dollo-decorating.netlify.app/"
+                class="relative"
+              >
+                <div
+                  class="bg-primary absolute right-2 top-2 px-3 py-1 rounded-md"
+                >
+                  Client Project
+                </div>
+                <img src="./assets/projects/dollo.png" alt="Apollo Decorating" />
+              </a>
+              <h4 class="text-white text-2xl mt-3">Apollo Decorating</h4>
+            </div>
+
+            <div class="item relative p-3 border rounded-lg">
+              <a
+                href="https://dollo-decorating.netlify.app/"
+                class="relative"
+              >
+                <div
+                  class="bg-primary absolute right-2 top-2 px-3 py-1 rounded-md"
+                >
+                  Client Project
+                </div>
+                <img src="./assets/projects/apkmodget.png" alt="APKModget" />
+              </a>
+              <h4 class="text-white text-2xl mt-3">APKModget</h4>
+            </div>
+
+            <div class="item relative p-3 border rounded-lg">
+              <a
+                href="https://parkerfordistrictattorney.com/democrat-for-chatham-county-ga/"
+                class="relative"
+              >
+                <div
+                  class="bg-primary absolute right-2 top-2 px-3 py-1 rounded-md"
+                >
+                  Client Project
+                </div>
+                <img src="./assets/projects/Jenny-Parker.png" alt="Jenny Parker" />
+              </a>
+              <h4 class="text-white text-2xl mt-3">Jenny Parker</h4>
+            </div>
+
+            <div class="item relative p-3 border rounded-lg">
+              <a
+                href="https://sprinkle-website.netlify.app/"
+                class="relative"
+              >
+                <div
+                  class="bg-primary absolute right-2 top-2 px-3 py-1 rounded-md"
+                >
+                  Client Project
+                </div>
+                <img src="./assets/projects/canadian-rooter2.png" alt="Canadian Rooter 2" />
+              </a>
+              <h4 class="text-white text-2xl mt-3">Canadian Rooter 2</h4>
+            </div>
+
+            <div class="item relative p-3 border rounded-lg">
+              <a
+                href="https://canadianrooter.com/backwater-valve-installation.php"
+                class="relative"
+              >
+                <div
+                  class="bg-primary absolute right-2 top-2 px-3 py-1 rounded-md"
+                >
+                  Client Project
+                </div>
+                <img src="./assets/projects/canadian-rooter.png" alt="Canadian Rooter" />
+              </a>
+              <h4 class="text-white text-2xl mt-3">Canadian Rooter</h4>
+            </div>
+
+            <div class="item relative p-3 border rounded-lg">
+              <a href="https://bmb-fb.netlify.app/" class="relative">
+                <div
+                  class="bg-primary absolute right-2 top-2 px-3 py-1 rounded-md"
+                >
+                  Client Project
+                </div>
+                <img src="./assets/projects/BMB-FB.png" alt="BMB-FB" />
+              </a>
+              <h4 class="text-white text-2xl mt-3">BMB FB</h4>
+            </div>
+
+            <div class="item relative p-3 border rounded-lg">
+              <a href="https://nu-devnayan.netlify.app/" class="relative">
+                <div
+                  class="bg-primary absolute right-2 top-2 px-3 py-1 rounded-md"
+                >
+                  Client Project
+                </div>
+                <img src="./assets/projects/NU-Advance.png" alt="NU Advance" />
+              </a>
+              <h4 class="text-white text-2xl mt-3">NU Advance</h4>
+            </div>
+
+            <div class="item relative p-3 border rounded-lg">
+              <a href="https://brooklyn-books.netlify.app/" class="relative">
+                <div
+                  class="bg-primary absolute right-2 top-2 px-3 py-1 rounded-md"
+                >
+                  Client Project
+                </div>
+                <img src="./assets/projects/brooklyn.png" alt="Brooklyn" />
+              </a>
+              <h4 class="text-white text-2xl mt-3">Brooklyn</h4>
+            </div>
+
+            <div class="item relative p-3 border rounded-lg">
+              <a href="https://care-point-dev-nayan.netlify.app/" class="relative">
+                <div
+                  class="bg-primary absolute right-2 top-2 px-3 py-1 rounded-md"
+                >
+                  Practice
+                </div>
+                <img src="./assets/projects/care-point.png" alt="Care Point" />
+              </a>
+              <h4 class="text-white text-2xl mt-3">Care Point</h4>
+            </div>
+
+            <div class="item relative p-3 border rounded-lg">
+              <a href="https://tutor-master-nayan.netlify.app/" class="relative">
+                <div
+                  class="bg-primary absolute right-2 top-2 px-3 py-1 rounded-md"
+                >
+                  Practice
+                </div>
+                <img src="./assets/projects/tutor-master.png" alt="Tutor Master" />
+              </a>
+              <h4 class="text-white text-2xl mt-3">Tutor Master</h4>
+            </div>
+
+            <div class="item relative p-3 border rounded-lg">
+              <a href="https://applab-nayan.netlify.app/" class="relative">
+                <div
+                  class="bg-primary absolute right-2 top-2 px-3 py-1 rounded-md"
+                >
+                  Practice
+                </div>
+                <img src="./assets/projects/applab.png" alt="Applab" />
+              </a>
+              <h4 class="text-white text-2xl mt-3">Applab</h4>
+            </div>
+
+            <div class="item relative p-3 border rounded-lg">
+              <a href="https://surfing-web.netlify.app/" class="relative">
+                <div
+                  class="bg-primary absolute right-2 top-2 px-3 py-1 rounded-md"
+                >
+                  Practice
+                </div>
+                <img src="./assets/projects/surfing.png" alt="Surfing" />
+              </a>
+              <h4 class="text-white text-2xl mt-3">Surfing</h4>
+            </div>
+          
+        </div>
+      </section>
+
+      <!-- Footer -->
+      <footer class="border">
+        <p class="text-center py-8 text-white">Copyright &copy; 2024 | All rights reserved.</p>
+      </footer>
+    </main>
+
+    <!-- Script -->
+    <script src="./js/app.js"></script>
+  </body>
+</html>
