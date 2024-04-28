@@ -18,14 +18,14 @@
     <link rel="stylesheet" href="./css/style.css" />
     <title>Developer Nayan | Portfolio</title>
   </head>
-  <body class="bg-gray-800 overflow-x-hidden">
-    <header class="fixed top-0 left-0 w-full bg-gray-800 z-30 shadow-xl">
+  <body class="bg-gray-800 bg-[url('./assets/bg-grid.png')] bg-center overflow-x-hidden">
+    <header class="fixed top-0 left-0 w-full z-40" id="header">
       <!-- Navbar -->
-      <div class="container px-3 py-2 mx-auto">
+      <div class="container px-3 py-2 mx-auto md:py-4">
         <nav class="navbar flex items-center justify-between">
           <a href="#">
             <img
-              class="logo"
+              class="logo w-[100px]"
               src="./assets/developer-nayan.png"
               alt="Developer Nayan"
             />
@@ -40,13 +40,13 @@
           </button>
 
           <ul
-            class="nav items-center absolute left-1/3 top-0 bg-black w-2/3 z-40 text-center h-screen pt-16 left-full transition-all ease-in-out duration-300"
+            class="nav items-center absolute left-1/3 top-0 bg-black w-2/3 z-40 text-center h-screen pt-16 left-full transition-all ease-in-out duration-300 md:relative md:h-auto md:w-auto md:left-0 md:flex md:pt-0 md:bg-transparent"
             id="menu"
           >
             <li>
               <a
                 href="#"
-                class="text-xl text-white block my-12 hover:text-primary transition ease-in-out duration-300"
+                class="text-xl text-white block my-12 hover:text-primary transition ease-in-out duration-300 md:ml-12 md:my-0 lg:ml-16"
                 onclick="toggleMenu()"
                 >Home</a
               >
@@ -54,7 +54,7 @@
             <li>
               <a
                 href="#my-skills"
-                class="text-xl text-white block my-12 hover:text-primary transition ease-in-out duration-300"
+                class="text-xl text-white block my-12 hover:text-primary transition ease-in-out duration-300 md:ml-12 md:my-0 lg:ml-16"
                 onclick="toggleMenu()"
                 >My Skills</a
               >
@@ -62,7 +62,7 @@
             <li>
               <a
                 href="#projects"
-                class="text-xl text-white block my-12 hover:text-primary transition ease-in-out duration-300"
+                class="text-xl text-white block my-12 hover:text-primary transition ease-in-out duration-300 md:ml-12 md:my-0 lg:ml-16"
                 onclick="toggleMenu()"
                 >Projects</a
               >
@@ -74,21 +74,21 @@
 
     <main>
       <!-- Hero Section -->
-      <div class="container px-3 py-2 mx-auto text-center">
-        <div class="hero-text">
-          <h5 class="text-2xl text-white mt-32 mb-2">
+      <div class="container px-3 py-2 mx-auto text-center md:py-12 lg:pt-32 lg:pb-16 lg:flex lg:justify-between lg:items-center lg:gap-x-14 xl:gap-x-20">
+        <div class="hero-text lg:w-8/12 lg:text-left">
+          <h5 class="text-2xl text-white mt-32 mb-2 lg:text-3xl lg:mt-0 lg:ml-1">
             Hi, I'm <span class="font-bold">Abdullah Nayan</span>,
           </h5>
-          <h3 class=" text-6xl block text-white font-bold leading-[1.2]"><span class="text-primary">Front</span>end Developer.</h3>
+          <h3 class="text-6xl block text-white font-bold leading-[1.2] lg:text-8xl xl:text-9xl"><span class="text-primary">Front</span>end Developer<sapn class="text-primary">.</sapn></h3>
+          <p class="text-xl text-gray-300 mt-10 leading-[1.7] lg:ml-1 xl:w-11/12">With 3 years of experience. I will turn your imagination into a live website. Let's create some cool stuff.</p>
           
-          <img
-                src="./assets/hero-img2.png"
-                alt="Hero Image"
-                class="w-2/3 mx-auto mt-14 p-2 border-2 border-primary rounded-full"
-              />
-
-          <p class="text-xl text-gray-300 mt-10 leading-[1.7]">I am a professional frontend developer with 3 years of experience. I will turn your imagination into live website. Let's make some cool stuff.</p>
+          
         </div>
+        <img
+              src="./assets/hero-img.png"
+              alt="Hero Image"
+              class="w-2/3 mx-auto mt-14 p-2 border-2 border-primary rounded-full md:w-1/2 lg:w-4/12 lg:mt-0 lg:border-4"
+            />
       </div>
 
       <!-- About Me Section
@@ -123,19 +123,19 @@
       </section> -->
 
       <!-- Skills Section -->
-      <section class="pt-16" id="my-skills">
+      <section class="pt-16 md:pt-24" id="my-skills">
         <div class="container px-3 py-2 mx-auto text-center">
           <h3
-            class="section-title relative text-primary text-center text-4xl font-bold"
+            class="section-title relative text-primary text-center text-4xl font-bold xl:text-5xl"
           >
             My Skills<span class="text-white">.</span>
           </h3>
-          <div class="mt-14 grid grid-cols-3 justify-center">
+          <div class="mt-14 grid grid-cols-3 md:grid-cols-4 lg:grid-cols-6 justify-center">
             <div class="flex justify-center items-center">
               <img
                 src="./assets/html.png"
                 alt="HTML 5"
-                class="p-6 hover:scale-110 transition ease-in-out duration-300"
+                class="p-6 md:p-10 lg:p-12 hover:scale-110 transition ease-in-out duration-300"
                 title="HTML 5"
               />
             </div>
@@ -143,7 +143,7 @@
               <img
                 src="./assets/css.png"
                 alt="CSS 3"
-                class="p-6 hover:scale-110 transition ease-in-out duration-300"
+                class="p-6 md:p-10 lg:p-12 hover:scale-110 transition ease-in-out duration-300"
                 title="CSS 3"
               />
             </div>
@@ -151,7 +151,7 @@
               <img
                 src="./assets/javascript.png"
                 alt="Javascript"
-                class="p-6 hover:scale-110 transition ease-in-out duration-300"
+                class="p-6 md:p-10 lg:p-12 hover:scale-110 transition ease-in-out duration-300"
                 title="Javascript"
               />
             </div>
@@ -159,7 +159,7 @@
               <img
                 src="./assets/bootstrap.png"
                 alt="Bootstrap 5"
-                class="p-6 hover:scale-110 transition ease-in-out duration-300"
+                class="p-6 md:p-10 lg:p-12 hover:scale-110 transition ease-in-out duration-300"
                 title="Bootstrap 5"
               />
             </div>
@@ -167,7 +167,7 @@
               <img
                 src="./assets/tailwindcss.png"
                 alt="Tailwind CSS"
-                class="p-6 hover:scale-110 transition ease-in-out duration-300"
+                class="p-6 md:p-10 lg:p-12 hover:scale-110 transition ease-in-out duration-300"
                 title="tailwind CSS"
               />
             </div>
@@ -175,7 +175,7 @@
               <img
                 src="./assets/react.png"
                 alt="React"
-                class="p-6 hover:scale-110 transition ease-in-out duration-300"
+                class="p-6 md:p-10 lg:p-12 hover:scale-110 transition ease-in-out duration-300"
                 title="React"
               />
             </div>
@@ -184,21 +184,21 @@
       </section>
 
       <!-- Projects Section -->
-      <section class="pt-16" id="projects">
+      <section class="pt-16 md:pt-24" id="projects">
         <div class="container px-3 py-2 mx-auto">
           <h3
-            class="section-title relative text-primary text-4xl text-center font-bold"
+            class="section-title relative text-primary text-4xl text-center font-bold xl:text-5xl"
           >
             Projects<span class="text-white">.</span>
           </h3>
 
-          <p class="mt-14 text-lg leading-[1.7] text-gray-300 text-center">Some of my previous works are here. I have done these projects in a renowned marketplace with 100% client satisfaction. There are also 4 practice projects.</p>
+          <p class="mt-14 text-lg leading-[1.7] text-gray-300 text-center lg:w-4/5 lg:mx-auto xl:w-2/3">Some of my previous works are here. I have done these projects in a renowned marketplace with 100% client satisfaction. There are also 4 practice projects.</p>
 
-          <div class="mt-14 flex flex-col gap-14">
+          <div class="mt-14 grid gap-14 md:mt-20 md:gap-20 lg:grid-cols-2 lg:gap-x-10 lg:gap-y-20 xl:grid-cols-3">
             <div class="item relative rounded-lg">
               <a href="http://www.sogena.it/" class="relative" target="_blank">
                 <div
-                  class="bg-primary absolute right-2 bottom-2 px-2 py-1 rounded-md text-xs"
+                  class="bg-primary absolute right-2 bottom-2 px-2 py-1 rounded-md text-sm z-30 md:px-3 md:py-2 md:text-base xl:px-2 xl:py-1 xl:text-sm 2xl:px-3 2xl:py-2 2xl:text-base"
                 >
                   Client Project
                 </div>
@@ -206,13 +206,13 @@
                 <div class="overlay"><i class="ri-link text-3xl w-[50px] h-[50px] rounded-full bg-white text-primary flex justify-center items-center"></i></div>
               </a>
               <a href="http://www.sogena.it/" target="_blank" class="group text-primary text-2xl mt-4 font-medium block hover:text-primary transition-all duration-300">Sogena<i class="ri-arrow-right-up-line text-primary transition-all duration-300 group-hover:ml-2"></i></a>
-              <p class="text-gray-300 mt-3">Frontend development for an Italian multi-service provider company.</p>
+              <p class="text-gray-300 mt-2 text-lg">Frontend development for an Italian multi-service provider company.</p>
             </div>
 
             <div class="item relative rounded-lg">
               <a href="https://ivan-masa.netlify.app/" class="relative" target="_blank">
                 <div
-                  class="bg-primary absolute right-2 bottom-2 px-2 py-1 rounded-md text-xs"
+                  class="bg-primary absolute right-2 bottom-2 px-2 py-1 rounded-md text-sm z-30 md:px-3 md:py-2 md:text-base xl:px-2 xl:py-1 xl:text-sm 2xl:px-3 2xl:py-2 2xl:text-base"
                 >
                   Client Project
                 </div>
@@ -220,13 +220,13 @@
                 <div class="overlay"><i class="ri-link text-3xl w-[50px] h-[50px] rounded-full bg-white text-primary flex justify-center items-center"></i></div>
               </a>
               <a href="https://ivan-masa.netlify.app/" target="_blank" class="group text-primary text-2xl mt-4 font-medium block hover:text-primary transition-all duration-300">Ivan Masa<i class="ri-arrow-right-up-line text-primary transition-all duration-300 group-hover:ml-2"></i></a>
-              <p class="text-gray-300 mt-3">Frontend development for a Musician to showcase his CDs and songs.</p>
+              <p class="text-gray-300 mt-2 text-lg">Frontend development for a Musician to showcase his CDs and songs.</p>
             </div>
 
             <div class="item relative rounded-lg">
               <a href="https://www.zuscreative.cz/" class="relative" target="_blank">
                 <div
-                  class="bg-primary absolute right-2 bottom-2 px-2 py-1 rounded-md text-xs"
+                  class="bg-primary absolute right-2 bottom-2 px-2 py-1 rounded-md text-sm z-30 md:px-3 md:py-2 md:text-base xl:px-2 xl:py-1 xl:text-sm 2xl:px-3 2xl:py-2 2xl:text-base"
                 >
                   Client Project
                 </div>
@@ -234,13 +234,13 @@
                 <div class="overlay"><i class="ri-link text-3xl w-[50px] h-[50px] rounded-full bg-white text-primary flex justify-center items-center"></i></div>
               </a>
               <a href="https://www.zuscreative.cz/" target="_blank" class="group text-primary text-2xl mt-4 font-medium block hover:text-primary transition-all duration-300">Creative<i class="ri-arrow-right-up-line text-primary transition-all duration-300 group-hover:ml-2"></i></a>
-              <p class="text-gray-300 mt-3">Frontend development for an educational website.</p>
+              <p class="text-gray-300 mt-2 text-lg">Frontend development for an educational website.</p>
             </div>
 
             <div class="item relative rounded-lg">
               <a href="https://accountingally.ca/" class="relative" target="_blank">
                 <div
-                  class="bg-primary absolute right-2 bottom-2 px-2 py-1 rounded-md text-xs"
+                  class="bg-primary absolute right-2 bottom-2 px-2 py-1 rounded-md text-sm z-30 md:px-3 md:py-2 md:text-base xl:px-2 xl:py-1 xl:text-sm 2xl:px-3 2xl:py-2 2xl:text-base"
                 >
                   Client Project
                 </div>
@@ -248,13 +248,13 @@
                 <div class="overlay"><i class="ri-link text-3xl w-[50px] h-[50px] rounded-full bg-white text-primary flex justify-center items-center"></i></div>
               </a>
               <a href="https://accountingally.ca/" target="_blank" class="group text-primary text-2xl mt-4 font-medium block hover:text-primary transition-all duration-300">YS Accounting & Tax<i class="ri-arrow-right-up-line text-primary transition-all duration-300 group-hover:ml-2"></i></a>
-              <p class="text-gray-300 mt-3">Frontend development for an accounting and tax specialist company based in Canada.</p>
+              <p class="text-gray-300 mt-2 text-lg">Frontend development for an accounting and tax specialist company based in Canada.</p>
             </div>
 
             <div class="item relative rounded-lg">
               <a href="https://sherry-v1.netlify.app/" class="relative" target="_blank">
                 <div
-                  class="bg-primary absolute right-2 bottom-2 px-2 py-1 rounded-md text-xs"
+                  class="bg-primary absolute right-2 bottom-2 px-2 py-1 rounded-md text-sm z-30 md:px-3 md:py-2 md:text-base xl:px-2 xl:py-1 xl:text-sm 2xl:px-3 2xl:py-2 2xl:text-base"
                 >
                   Client Project
                 </div>
@@ -262,13 +262,13 @@
                 <div class="overlay"><i class="ri-link text-3xl w-[50px] h-[50px] rounded-full bg-white text-primary flex justify-center items-center"></i></div>
               </a>
               <a href="https://sherry-v1.netlify.app/" target="_blank" class="group text-primary text-2xl mt-4 font-medium block hover:text-primary transition-all duration-300">Finance<i class="ri-arrow-right-up-line text-primary transition-all duration-300 group-hover:ml-2"></i></a>
-              <p class="text-gray-300 mt-3">Frontend development for a student to showcase her case study and design.</p>
+              <p class="text-gray-300 mt-2 text-lg">Frontend development for a student to showcase her case study and design.</p>
             </div>
 
             <div class="item relative rounded-lg">
               <a href="https://sherry7.netlify.app/" class="relative" target="_blank">
                 <div
-                  class="bg-primary absolute right-2 bottom-2 px-2 py-1 rounded-md text-xs"
+                  class="bg-primary absolute right-2 bottom-2 px-2 py-1 rounded-md text-sm z-30 md:px-3 md:py-2 md:text-base xl:px-2 xl:py-1 xl:text-sm 2xl:px-3 2xl:py-2 2xl:text-base"
                 >
                   Client Project
                 </div>
@@ -276,13 +276,13 @@
                 <div class="overlay"><i class="ri-link text-3xl w-[50px] h-[50px] rounded-full bg-white text-primary flex justify-center items-center"></i></div>
               </a>
               <a href="https://sherry7.netlify.app/" target="_blank" class="group text-primary text-2xl mt-4 font-medium block hover:text-primary transition-all duration-300">Wescue<i class="ri-arrow-right-up-line text-primary transition-all duration-300 group-hover:ml-2"></i></a>
-              <p class="text-gray-300 mt-3">Frontend development of a landing page for a student to showcase her design.</p>
+              <p class="text-gray-300 mt-2 text-lg">Frontend development of a landing page for a student to showcase her design.</p>
             </div>
 
             <div class="item relative rounded-lg">
               <a href="https://leelaworldwide.com/" class="relative" target="_blank">
                 <div
-                  class="bg-primary absolute right-2 bottom-2 px-2 py-1 rounded-md text-xs"
+                  class="bg-primary absolute right-2 bottom-2 px-2 py-1 rounded-md text-sm z-30 md:px-3 md:py-2 md:text-base xl:px-2 xl:py-1 xl:text-sm 2xl:px-3 2xl:py-2 2xl:text-base"
                 >
                   Client Project
                 </div>
@@ -290,13 +290,13 @@
                 <div class="overlay"><i class="ri-link text-3xl w-[50px] h-[50px] rounded-full bg-white text-primary flex justify-center items-center"></i></div>
               </a>
               <a href="https://leelaworldwide.com/" target="_blank" class="group text-primary text-2xl mt-4 font-medium block hover:text-primary transition-all duration-300">Leela Worldwide<i class="ri-arrow-right-up-line text-primary transition-all duration-300 group-hover:ml-2"></i></a>
-              <p class="text-gray-300 mt-3">Frontend development for an Indian company.</p>
+              <p class="text-gray-300 mt-2 text-lg">Frontend development for an Indian company.</p>
             </div>
 
             <div class="item relative rounded-lg">
               <a href="https://cas-games.netlify.app/" class="relative" target="_blank">
                 <div
-                  class="bg-primary absolute right-2 bottom-2 px-2 py-1 rounded-md text-xs"
+                  class="bg-primary absolute right-2 bottom-2 px-2 py-1 rounded-md text-sm z-30 md:px-3 md:py-2 md:text-base xl:px-2 xl:py-1 xl:text-sm 2xl:px-3 2xl:py-2 2xl:text-base"
                 >
                   Client Project
                 </div>
@@ -304,7 +304,7 @@
                 <div class="overlay"><i class="ri-link text-3xl w-[50px] h-[50px] rounded-full bg-white text-primary flex justify-center items-center"></i></div>
               </a>
               <a href="https://cas-games.netlify.app/" target="_blank" class="group text-primary text-2xl mt-4 font-medium block hover:text-primary transition-all duration-300">Cas Games<i class="ri-arrow-right-up-line text-primary transition-all duration-300 group-hover:ml-2"></i></a>
-              <p class="text-gray-300 mt-3">Frontend development of a landing gaming website for a client.</p>
+              <p class="text-gray-300 mt-2 text-lg">Frontend development of a landing gaming website for a client.</p>
             </div>
 
             <div class="item relative rounded-lg">
@@ -313,7 +313,7 @@
                 class="relative" target="_blank"
               >
                 <div
-                  class="bg-primary absolute right-2 bottom-2 px-2 py-1 rounded-md text-xs"
+                  class="bg-primary absolute right-2 bottom-2 px-2 py-1 rounded-md text-sm z-30 md:px-3 md:py-2 md:text-base xl:px-2 xl:py-1 xl:text-sm 2xl:px-3 2xl:py-2 2xl:text-base"
                 >
                   Client Project
                 </div>
@@ -321,7 +321,7 @@
                 <div class="overlay"><i class="ri-link text-3xl w-[50px] h-[50px] rounded-full bg-white text-primary flex justify-center items-center"></i></div>
               </a>
               <a href="https://yuvithecafe.com/" target="_blank" class="group text-primary text-2xl mt-4 font-medium block hover:text-primary transition-all duration-300">Yuvi Coffee<i class="ri-arrow-right-up-line text-primary transition-all duration-300 group-hover:ml-2"></i></a>
-              <p class="text-gray-300 mt-3">Frontend development for a Coffee shop based in India.</p>
+              <p class="text-gray-300 mt-2 text-lg">Frontend development for a Coffee shop based in India.</p>
             </div>
 
             <div class="item relative rounded-lg">
@@ -330,7 +330,7 @@
                 class="relative" target="_blank"
               >
                 <div
-                  class="bg-primary absolute right-2 bottom-2 px-2 py-1 rounded-md text-xs"
+                  class="bg-primary absolute right-2 bottom-2 px-2 py-1 rounded-md text-sm z-30 md:px-3 md:py-2 md:text-base xl:px-2 xl:py-1 xl:text-sm 2xl:px-3 2xl:py-2 2xl:text-base"
                 >
                   Client Project
                 </div>
@@ -338,7 +338,7 @@
                 <div class="overlay"><i class="ri-link text-3xl w-[50px] h-[50px] rounded-full bg-white text-primary flex justify-center items-center"></i></div>
               </a>
               <a href="https://dollo-decorating.netlify.app/" target="_blank" class="group text-primary text-2xl mt-4 font-medium block hover:text-primary transition-all duration-300">Dollo Decorating<i class="ri-arrow-right-up-line text-primary transition-all duration-300 group-hover:ml-2"></i></a>
-              <p class="text-gray-300 mt-3">Frontend development for a decorating service provider company with a custom slider/carousel.</p>
+              <p class="text-gray-300 mt-2 text-lg">Frontend development for a decorating service provider company with a custom slider/carousel.</p>
             </div>
 
             <div class="item relative rounded-lg">
@@ -347,7 +347,7 @@
                 class="relative" target="_blank"
               >
                 <div
-                  class="bg-primary absolute right-2 bottom-2 px-2 py-1 rounded-md text-xs"
+                  class="bg-primary absolute right-2 bottom-2 px-2 py-1 rounded-md text-sm z-30 md:px-3 md:py-2 md:text-base xl:px-2 xl:py-1 xl:text-sm 2xl:px-3 2xl:py-2 2xl:text-base"
                 >
                   Client Project
                 </div>
@@ -355,7 +355,7 @@
                 <div class="overlay"><i class="ri-link text-3xl w-[50px] h-[50px] rounded-full bg-white text-primary flex justify-center items-center"></i></div>
               </a>
               <a href="https://apkmodget.com/" target="_blank" class="group text-primary text-2xl mt-4 font-medium block hover:text-primary transition-all duration-300">APKModget<i class="ri-arrow-right-up-line text-primary transition-all duration-300 group-hover:ml-2"></i></a>
-              <p class="text-gray-300 mt-3">Frontend development for a Pakistani client of an apk website.</p>
+              <p class="text-gray-300 mt-2 text-lg">Frontend development for a Pakistani client of an apk website.</p>
             </div>
 
             <div class="item relative rounded-lg">
@@ -364,7 +364,7 @@
                 class="relative" target="_blank"
               >
                 <div
-                  class="bg-primary absolute right-2 bottom-2 px-2 py-1 rounded-md text-xs"
+                  class="bg-primary absolute right-2 bottom-2 px-2 py-1 rounded-md text-sm z-30 md:px-3 md:py-2 md:text-base xl:px-2 xl:py-1 xl:text-sm 2xl:px-3 2xl:py-2 2xl:text-base"
                 >
                   Client Project
                 </div>
@@ -372,7 +372,7 @@
                 <div class="overlay"><i class="ri-link text-3xl w-[50px] h-[50px] rounded-full bg-white text-primary flex justify-center items-center"></i></div>
               </a>
               <a href="https://parkerfordistrictattorney.com/democrat-for-chatham-county-ga/" target="_blank" class="group text-primary text-2xl mt-4 font-medium block hover:text-primary transition-all duration-300">Jenny Parker<i class="ri-arrow-right-up-line text-primary transition-all duration-300 group-hover:ml-2"></i></a>
-              <p class="text-gray-300 mt-3">Frontend development for a Lawyer to showcase her achievements.</p>
+              <p class="text-gray-300 mt-2 text-lg">Frontend development for a Lawyer to showcase her achievements.</p>
             </div>
 
             <div class="item relative rounded-lg">
@@ -381,7 +381,7 @@
                 class="relative" target="_blank"
               >
                 <div
-                  class="bg-primary absolute right-2 bottom-2 px-2 py-1 rounded-md text-xs"
+                  class="bg-primary absolute right-2 bottom-2 px-2 py-1 rounded-md text-sm z-30 md:px-3 md:py-2 md:text-base xl:px-2 xl:py-1 xl:text-sm 2xl:px-3 2xl:py-2 2xl:text-base"
                 >
                   Client Project
                 </div>
@@ -389,13 +389,13 @@
                 <div class="overlay"><i class="ri-link text-3xl w-[50px] h-[50px] rounded-full bg-white text-primary flex justify-center items-center"></i></div>
               </a>
               <a href="https://sprinkle-website.netlify.app/" target="_blank" class="group text-primary text-2xl mt-4 font-medium block hover:text-primary transition-all duration-300">Canadian Rooter<i class="ri-arrow-right-up-line text-primary transition-all duration-300 group-hover:ml-2"></i></a>
-              <p class="text-gray-300 mt-3">Frontend development for a Canada based company.</p>
+              <p class="text-gray-300 mt-2 text-lg">Frontend development for a Canada based company.</p>
             </div>
 
             <div class="item relative rounded-lg">
               <a href="https://bmb-fb.netlify.app/" class="relative" target="_blank">
                 <div
-                  class="bg-primary absolute right-2 bottom-2 px-2 py-1 rounded-md text-xs"
+                  class="bg-primary absolute right-2 bottom-2 px-2 py-1 rounded-md text-sm z-30 md:px-3 md:py-2 md:text-base xl:px-2 xl:py-1 xl:text-sm 2xl:px-3 2xl:py-2 2xl:text-base"
                 >
                   Client Project
                 </div>
@@ -403,13 +403,13 @@
                 <div class="overlay"><i class="ri-link text-3xl w-[50px] h-[50px] rounded-full bg-white text-primary flex justify-center items-center"></i></div>
               </a>
               <a href="https://bmb-fb.netlify.app/" target="_blank" class="group text-primary text-2xl mt-4 font-medium block hover:text-primary transition-all duration-300">BMB FB<i class="ri-arrow-right-up-line text-primary transition-all duration-300 group-hover:ml-2"></i></a>
-              <p class="text-gray-300 mt-3">Frontend development for a statistics of a football match.</p>
+              <p class="text-gray-300 mt-2 text-lg">Frontend development for a statistics of a football match.</p>
             </div>
 
             <div class="item relative rounded-lg">
               <a href="https://nu-devnayan.netlify.app/" class="relative" target="_blank">
                 <div
-                  class="bg-primary absolute right-2 bottom-2 px-2 py-1 rounded-md text-xs"
+                  class="bg-primary absolute right-2 bottom-2 px-2 py-1 rounded-md text-sm z-30 md:px-3 md:py-2 md:text-base xl:px-2 xl:py-1 xl:text-sm 2xl:px-3 2xl:py-2 2xl:text-base"
                 >
                   Client Project
                 </div>
@@ -417,13 +417,13 @@
                 <div class="overlay"><i class="ri-link text-3xl w-[50px] h-[50px] rounded-full bg-white text-primary flex justify-center items-center"></i></div>
               </a>
               <a href="https://nu-devnayan.netlify.app/" target="_blank" class="group text-primary text-2xl mt-4 font-medium block hover:text-primary transition-all duration-300">NU Advance<i class="ri-arrow-right-up-line text-primary transition-all duration-300 group-hover:ml-2"></i></a>
-              <p class="text-gray-300 mt-3">Frontend development of a course details page for an University.</p>
+              <p class="text-gray-300 mt-2 text-lg">Frontend development of a course details page for an University.</p>
             </div>
 
             <div class="item relative rounded-lg">
               <a href="https://care-point-dev-nayan.netlify.app/" class="relative" target="_blank">
                 <div
-                  class="bg-primary absolute right-2 bottom-2 px-2 py-1 rounded-md text-xs"
+                  class="bg-primary absolute right-2 bottom-2 px-2 py-1 rounded-md text-sm z-30 md:px-3 md:py-2 md:text-base xl:px-2 xl:py-1 xl:text-sm 2xl:px-3 2xl:py-2 2xl:text-base"
                 >
                   Practice
                 </div>
@@ -431,13 +431,13 @@
                 <div class="overlay"><i class="ri-link text-3xl w-[50px] h-[50px] rounded-full bg-white text-primary flex justify-center items-center"></i></div>
               </a>
               <a href="https://care-point-dev-nayan.netlify.app/" target="_blank" class="group text-primary text-2xl mt-4 font-medium block hover:text-primary transition-all duration-300">Care Point<i class="ri-arrow-right-up-line text-primary transition-all duration-300 group-hover:ml-2"></i></a>
-              <p class="text-gray-300 mt-3">Frontend development for a doctor's point. It was a practice project.</p>
+              <p class="text-gray-300 mt-2 text-lg">Frontend development for a doctor's point. It was a practice project.</p>
             </div>
 
             <div class="item relative rounded-lg">
               <a href="https://tutor-master-nayan.netlify.app/" class="relative" target="_blank">
                 <div
-                  class="bg-primary absolute right-2 bottom-2 px-2 py-1 rounded-md text-xs"
+                  class="bg-primary absolute right-2 bottom-2 px-2 py-1 rounded-md text-sm z-30 md:px-3 md:py-2 md:text-base xl:px-2 xl:py-1 xl:text-sm 2xl:px-3 2xl:py-2 2xl:text-base"
                 >
                   Practice
                 </div>
@@ -445,13 +445,13 @@
                 <div class="overlay"><i class="ri-link text-3xl w-[50px] h-[50px] rounded-full bg-white text-primary flex justify-center items-center"></i></div>
               </a>
               <a href="https://tutor-master-nayan.netlify.app/" target="_blank" class="group text-primary text-2xl mt-4 font-medium block hover:text-primary transition-all duration-300">Tutor Master<i class="ri-arrow-right-up-line text-primary transition-all duration-300 group-hover:ml-2"></i></a>
-              <p class="text-gray-300 mt-3">Frontend development for a Tutor website. It was a practice project.</p>
+              <p class="text-gray-300 mt-2 text-lg">Frontend development for a Tutor website. It was a practice project.</p>
             </div>
 
             <div class="item relative rounded-lg">
               <a href="https://applab-nayan.netlify.app/" class="relative" target="_blank">
                 <div
-                  class="bg-primary absolute right-2 bottom-2 px-2 py-1 rounded-md text-xs"
+                  class="bg-primary absolute right-2 bottom-2 px-2 py-1 rounded-md text-sm z-30 md:px-3 md:py-2 md:text-base xl:px-2 xl:py-1 xl:text-sm 2xl:px-3 2xl:py-2 2xl:text-base"
                 >
                   Practice
                 </div>
@@ -459,13 +459,13 @@
                 <div class="overlay"><i class="ri-link text-3xl w-[50px] h-[50px] rounded-full bg-white text-primary flex justify-center items-center"></i></div>
               </a>
               <a href="https://applab-nayan.netlify.app/" target="_blank" class="group text-primary text-2xl mt-4 font-medium block hover:text-primary transition-all duration-300">Applab<i class="ri-arrow-right-up-line text-primary transition-all duration-300 group-hover:ml-2"></i></a>
-              <p class="text-gray-300 mt-3">Frontend development for an app's landing page. It was a practice project.</p>
+              <p class="text-gray-300 mt-2 text-lg">Frontend development for an app's landing page. It was a practice project.</p>
             </div>
 
             <div class="item relative rounded-lg">
               <a href="https://surfing-web.netlify.app/" class="relative" target="_blank">
                 <div
-                  class="bg-primary absolute right-2 bottom-2 px-2 py-1 rounded-md text-xs"
+                  class="bg-primary absolute right-2 bottom-2 px-2 py-1 rounded-md text-sm z-30 md:px-3 md:py-2 md:text-base xl:px-2 xl:py-1 xl:text-sm 2xl:px-3 2xl:py-2 2xl:text-base"
                 >
                   Practice
                 </div>
@@ -473,16 +473,16 @@
                 <div class="overlay"><i class="ri-link text-3xl w-[50px] h-[50px] rounded-full bg-white text-primary flex justify-center items-center"></i></div>
               </a>
               <a href="https://surfing-web.netlify.app/" target="_blank" class="group text-primary text-2xl mt-4 font-medium block hover:text-primary transition-all duration-300 in">Surfing<i class="ri-arrow-right-up-line text-primary transition-all duration-300 group-hover:ml-2"></i></a>
-              <p class="text-gray-300 mt-3">Frontend development for a surfing boat shop. It was a practice project.</p>
+              <p class="text-gray-300 mt-2 text-lg">Frontend development for a surfing boat shop. It was a practice project.</p>
             </div>
           
         </div>
       </section>
 
       <!-- Footer -->
-      <footer class="border-t border-gray-700 mt-14">
+      <footer class="border-t border-gray-700 mt-14 bg-gray-800">
         <div class="container mx-auto">
-          <p class="text-center py-8 text-white">Copyright &copy; 2024 | All rights reserved.</p>
+          <p class="text-center py-8 text-white md:text-lg">Copyright &copy; 2024 | All rights reserved.</p>
         </div>
       </footer>
     </main>

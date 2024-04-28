@@ -2,6 +2,7 @@ body {
   font-family: "Poppins", sans-serif;
   font-weight: 400;
   scroll-behavior: smooth !important;
+  background-image: url(../assets/bg-grid.png);
 }
 
 .item a {
