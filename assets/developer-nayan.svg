@@ -1,0 +1,16 @@
+<svg version="1.2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 50" width="100" height="50">
+	<title>New Project</title>
+	<style>
+		tspan { white-space:pre } 
+		.t0 { font-size: 19px;fill: #ffffff;font-weight: 700;font-family: "Poppins-Bold", "Poppins" } 
+		.t1 { font-size: 30px;fill: #00ff84;font-weight: 700;font-family: "Poppins-Bold", "Poppins" } 
+	</style>
+	<text id="Developer" style="transform: matrix(1,0,0,1,-1,15)" >
+		<tspan x="0" y="0" class="t0">D</tspan><tspan  y="0" class="t0">e</tspan><tspan  y="0" class="t0">v</tspan><tspan  y="0" class="t0">e</tspan><tspan  y="0" class="t0">l</tspan><tspan  y="0" class="t0">o</tspan><tspan  y="0" class="t0">p</tspan><tspan  y="0" class="t0">e</tspan><tspan  y="0" class="t0">r
+</tspan>
+	</text>
+	<text id="Nayan" style="transform: matrix(1,0,0,1,-1,41)" >
+		<tspan x="0" y="0" class="t1">N</tspan><tspan  y="0" class="t1">a</tspan><tspan  y="0" class="t1">y</tspan><tspan  y="0" class="t1">a</tspan><tspan  y="0" class="t1">n</tspan><tspan  y="0" class="t1">
+</tspan>
+	</text>
+</svg>

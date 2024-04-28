@@ -1,5 +1,35 @@
 body {
-  font-family: "Inter", sans-serif;
+  font-family: "Poppins", sans-serif;
   font-weight: 400;
   scroll-behavior: smooth !important;
+}
+
+.item a {
+  position: relative;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: rgba(0, 255, 132, 0.8);
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  transition: 0.3s ease-in-out;
+}
+
+.item a:hover .overlay {
+  opacity: 1;
+}
+
+.project-title i {
+  transition: 0.3s ease-in-out;
+}
+
+.project-title:hover i {
+  margin-left: 10px;
 }
